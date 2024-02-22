@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dragon_Tamagochi_Vidget"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="200" WindowStyle="None" Opacity="0.5" AllowsTransparency="True" ResizeMode="NoResize" MouseMove="Window_MouseMove" MouseLeave="Window_MouseLeave" MouseDown="Window_MouseDown">
-    <Grid>
-        <Button x:Name="Close" Content="x" HorizontalAlignment="Right" VerticalAlignment="Top" Width="25" Height="25" Click="Close_Click"/>
-    </Grid>
+        Title="MainWindow" Height="300" Width="200" WindowStyle="None" Opacity="0.1" 
+        AllowsTransparency="True" ResizeMode="NoResize" MouseMove="Window_MouseMove" 
+        MouseLeave="Window_MouseLeave" MouseDown="Window_MouseDown">
+
+    <Frame x:Name="_mainFrame" NavigationUIVisibility="Hidden"></Frame>
+    
 </Window>

@@ -23,9 +23,14 @@ namespace Dragon_Tamagochi_Vidget
         public MainWindow()
         {
             InitializeComponent();
-        
+            FrameClass.mainFraim = _mainFrame;
+            FrameClass.mainFraim.Navigate(new Img());
         }
 
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
         private void Window_MouseMove(object sender, MouseEventArgs e)
         {
             this.Opacity = 1;
@@ -33,17 +38,8 @@ namespace Dragon_Tamagochi_Vidget
 
         private void Window_MouseLeave(object sender, MouseEventArgs e)
         {
-            this.Opacity = 0.5;
+            this.Opacity = 0.1;
         }
 
-        private void Close_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            this.DragMove();
-        }
     }
 }
