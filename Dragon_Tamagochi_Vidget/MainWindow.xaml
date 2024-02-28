@@ -5,10 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dragon_Tamagochi_Vidget"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="200" WindowStyle="None" Opacity="0.1" 
-        AllowsTransparency="True" ResizeMode="NoResize" MouseMove="Window_MouseMove" 
-        MouseLeave="Window_MouseLeave" MouseDown="Window_MouseDown">
+        Title="MainWindow" WindowStyle="None" 
+        AllowsTransparency="True" WindowState="Maximized" 
+        Topmost="True" ShowInTaskbar="False">
 
-    <Frame x:Name="_mainFrame" NavigationUIVisibility="Hidden"></Frame>
-    
+    <Window.Background>
+        <ImageBrush />
+    </Window.Background>
+    <Grid>
+        <Image Name="img" Source="C:/Users/79010/source/repos/Dragon_Tamagochi_Vidget/Dragon_Tamagochi_Vidget/res/Dragon.png"
+               HorizontalAlignment="Center" VerticalAlignment="Top"
+                Width="2" Height="3" Stretch="Uniform"/>
+        <TextBlock x:Name="View" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                   Width="200" Height="320">
+            <TextBlock.Background>
+                <VisualBrush Visual="{Binding ElementName=img}" />
+            </TextBlock.Background>
+        </TextBlock>
+    </Grid>
 </Window>
+

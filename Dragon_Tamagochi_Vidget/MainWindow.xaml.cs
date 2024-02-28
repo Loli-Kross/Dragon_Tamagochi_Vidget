@@ -23,22 +23,12 @@ namespace Dragon_Tamagochi_Vidget
         public MainWindow()
         {
             InitializeComponent();
-            FrameClass.mainFraim = _mainFrame;
-            FrameClass.mainFraim.Navigate(new Img());
-        }
-
-        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            this.DragMove();
-        }
-        private void Window_MouseMove(object sender, MouseEventArgs e)
-        {
-            this.Opacity = 1;
-        }
-
-        private void Window_MouseLeave(object sender, MouseEventArgs e)
-        {
-            this.Opacity = 0.1;
+            //ImageBrush imBrush = new ImageBrush()
+            //{
+            //    ImageSource = new BitmapImage(new Uri("C:/Users/79010/source/repos/Dragon_Tamagochi_Vidget/Dragon_Tamagochi_Vidget/res/Dragon.png")),
+            //};
+            //imBrush.Stretch = Stretch.Uniform;
+            //this.Background = imBrush;
         }
 
     }
